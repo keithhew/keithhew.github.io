@@ -1,50 +1,60 @@
 <!DOCTYPE html>
-<html>
-<title>RTK Golf</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+<html style="height: 100%;">
 
-<style>
-  
-  body {
-    font-family: "Avenir", "Arial", sans-serif;
-    text-align: center;
-  }
-  body, html {height: 100%}
+<head>
+    <title>RTK Golf</title>
+    <meta charset="UTF-8">
+    
+    <!-- generics -->
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" href="favicon-57.png" sizes="57x57">
+    <link rel="icon" href="favicon-76.png" sizes="76x76">
+    <link rel="icon" href="favicon-96.png" sizes="96x96">
+    <link rel="icon" href="favicon-128.png" sizes="128x128">
+    <link rel="icon" href="favicon-192.png" sizes="192x192">
+    <link rel="icon" href="favicon-228.png" sizes="228x228">
 
-  .bgimg {
-    background-image: url('background.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href=“/path/to/favicon-196.png">
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="favicon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="favicon-180.png" sizes="180x180">
 
-  h1 {font-weight: 600}
-  p {font-weight: 300}
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
 
+    <!-- Windows 8.1 + IE11 and above -->
+    <meta name="msapplication-config" content="browserconfig.xml" />
 
-</style>
+    <!-- Josefin Sans Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+</head>
 
-<body>
-
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-middle">
-      <img class="w3-animate-top" src="logo.svg">
-      <h1 class="w3-xxlarge w3-animate-top">The only golf GPS with</br>centimetre accuracy.</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-animate-bottom"><a href="mailto:contact@rtkgolf.com">contact@rtkgolf.com</a></p>
+<body style="height: 100%; margin: 0">
+    
+    <!-- Background -->
+    <div style="background-image: url('background.jpg'); min-height: 100%; background-position: center; background-size: cover;">
+        
+        <!-- Black Box -->
+        <div style="background-color: rgba(0, 0, 0, 0.8); width: 60vmin; height: 60vmin; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            
+            <!-- White Dash -->
+            <div style="background-color: white; width: 15%; height: 3%; position: absolute; top: 50%; left: 12.5%; transform: translate(0, -50%);"></div>
+            
+            <!-- Logo -->
+            <img src="white-logo-tagline.svg" style="width: 75%; position: absolute; top: 70%; left: 12.5%; transform: translate(0, -50%);">
+            
+            <!-- Email -->
+            <p style="color: #a5a5a5; font-family: 'Josefin Sans', sans-serif; font-size: 2.5vmin; position: absolute; top: 85%; left: 12.5%; transform: translate(0, -50%);">
+                <a href="mailto:contact@rtkgolf.com" style="color: #a5a5a5;">contact@rtkgolf.com</a>
+            </p>
+        </div>
     </div>
-  </div>
-
 </body>
+
 </html>
